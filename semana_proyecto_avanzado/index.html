@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página web completa</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+
+<body class="hidden">
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <img src="img/Logo.jpeg" alt="" style="border-radius: 40px;vertical-align: top;" >
+                </div>
+                <div class="enlaces" id="enlaces">
+                    <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="#" id="enlace-equipo" class="btn-header">Equipo</a>
+                    <a href="#" id="enlace-servicio" class="btn-header">Servicios</a>
+                    <a href="#" id="enlace-trabajo" class="btn-header">Trabajos</a>
+                    <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
+                </div>
+            </div>
+        </nav>
+        <div class="textos">
+            <h1>La Molienda Cafe Puro</h1>
+            <h2>Cafetería</h2>
+        </div>
+    </header>
+    <main>
+        <section class="team contenedor" id="equipo">
+            <h3>Nuestro Cafe</h3>
+            <p class="after">Reactiva tu dia</p>
+            <div class="card">
+                <div class="content-card">       
+                    <div class="people">
+                        <img src="img/molido-o-entero.webp" alt="">
+                    </div>             
+                    <div class="texto-team">
+                        <h4>Cafe Molido</h4>
+                        <p>8.00</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/cafe-pasado-preferido-hogares.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Cafe Pasado</h4>
+                        <p>7.00</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/el-cafe-tostado-en-el-refrigerador.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Cafe Tostado</h4>
+                        <p>9.00.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section  id="comida" class="team contenedor" style="margin:auto; padding: var(--margenes) 0; width: 90%; max-width: 1000px; text-align: center; overflow: hidden; margin:auto; padding: var(--margenes) 0; width: 90%; max-width: 1000px; text-align: center; overflow: hidden; font-size: var(--titulos); color: var(--color1); margin-bottom: var(--espacios);"> 
+            <section style="display: flex; margin-bottom: 10px; justify-content: center; gap: 15px; padding-left: 150px; padding-right: 150px; flex-wrap: wrap;"
+            id="menu">     
+            </section>
+        <section class="work contenedor" id="trabajo">
+            <h3>Nuestros Platillos</h3>
+            <p class="after">Hacemos de algo simple algo extraordinario</p>
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Todos</li>
+                    <li class="filter" data-nombre='diseño'>Postre</li>
+                    <li class="filter" data-nombre='programacion'>Aperitivo</li>
+                    <li class="filter" data-nombre='marketing'>combo</li>
+                </ul>
+                
+            </div>
+
+            <section style="display: flex; margin-bottom: 10px; justify-content: center; gap: 15px; padding-left: 150px; padding-right: 150px; flex-wrap: wrap;"
+            id="aperitivo">     
+            </section>
+
+            <section>
+                <form onsubmit="enviodedatos(event)"  action="" style="text-align: center;">
+                    <div><input type="text" name="" id="nombre" placeholder="Nombres" style="height: 30px;width: 400px;"></div>
+                    <div><input type="text" name="" id="apellido" placeholder="Apellidos" style="height: 30px;width: 400px;"></div>
+                    <div><input type="email" name="" id="correo" placeholder="e-mail" style="height: 30px;width: 400px;"></div>
+                    <div><input type="number" name="" id="dinero" placeholder="contraseña" style="height: 30px;width: 400px;"></div>
+                    <button type="submit">Enviar</button>
+                </form>
+        
+                <h2 id="dolares"></h2>
+            </section>        
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="img/logo.mp4" alt="">
+            </div>
+            <div class="iconos">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-github"></i>
+            </div>
+            <p>La pasión e innovación es lo que nos distingue del resto</p>
+        </div>
+
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/filtro.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
